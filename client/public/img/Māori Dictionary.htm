@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://maoridictionary.co.nz/ -->
+<html lang="en" style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./Māori Dictionary_files/7443286c10"></script><script src="./Māori Dictionary_files/nr-1071.min.js"></script><script type="text/javascript" async="" src="./Māori Dictionary_files/bRc.js"></script><script type="text/javascript" async="" src="./Māori Dictionary_files/ga.js"></script><script src="./Māori Dictionary_files/selectivizr-min.js"></script><script src="./Māori Dictionary_files/jquery-ui-1.8.23.custom.min.js"></script><script src="./Māori Dictionary_files/jquery.uniform.min.js"></script><script src="./Māori Dictionary_files/js.cookie.js"></script><script src="./Māori Dictionary_files/audio.min.js"></script><script src="./Māori Dictionary_files/jquery.fancybox.pack.js"></script><script src="./Māori Dictionary_files/jquery.bxslider.min.js"></script><script src="./Māori Dictionary_files/jquery.selectBoxIt.min.js"></script><script src="./Māori Dictionary_files/init.js"></script><script src="./Māori Dictionary_files/search.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title>Māori Dictionary</title>
+<link rel="Shortcut Icon" type="image/x-icon" href="https://maoridictionary.co.nz/favicon.ico">
+<link rel="apple-touch-icon" href="https://maoridictionary.co.nz/i/mobile/favicon.png">
+<meta name="description" content="Search the Maori dictionary with the online version of Te Aka Maori-English, English-Maori Dictionary and Index">
+<meta name="viewport" content="width=900">
+<meta name="keywords" content="maori dictionary,maori,maori language,maori english,english maori,maori translation,dictionary">
+<meta name="author" content="www.vo2.co.nz">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="apple-touch-icon-precomposed" href="https://maoridictionary.co.nz/i/mobile/favicon.png">
+
+<link rel="stylesheet" type="text/css" href="./Māori Dictionary_files/style.css">
+<script src="./Māori Dictionary_files/modernizr-2.6.2.min.js"></script>
+<script src="./Māori Dictionary_files/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+Modernizr.load([
+{
+    load : [    
+            "/v3/js/selectivizr-min.js",
+            "/v3/js/jquery-ui-1.8.23.custom.min.js",
+            "/v3/js/jquery.uniform.min.js",
+            "/v3/js/js.cookie.js",
+            "/v3/js/audio.min.js",
+            "/v3/js/jquery.fancybox.pack.js",
+            "/v3/js/jquery.bxslider.min.js",
+            "/v3/js/jquery.selectBoxIt.min.js",
+            "/v3/js/selectivizr-min.js",
+            "/v3/js/init.js",
+            "/v3/js/search.js"
+       ],
+    complete: function(){
+        audiojs.events.ready(function() {
+                var audios = document.getElementsByClassName('definition-audio');
+                var a1 = audiojs.createAll({
+                    css: false
+                }, audios);
+            });
+        }
+    }
+]);
+</script>
+<!--
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+<script type='text/javascript'>
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/8669472/Dictionary-Header', [234, 60], 'div-gpt-ad-1369700104586-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+});
+</script>
+-->
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body style="">
+
+        <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-494024-7']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+    <!-- Qualaroo for maoridictionary.co.nz -->
+    <!-- Paste this code right after the <body> tag on every page of your site. -->
+    <script type="text/javascript">
+      var _kiq = _kiq || [];
+      (function(){
+        setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+        s.async = true; s.src = '//s3.amazonaws.com/ki.js/54287/bRc.js'; f.parentNode.insertBefore(s, f);
+        }, 1);
+      })();
+    </script>
+    
+
+    <header id="header">
+        <a href="https://maoridictionary.co.nz/#" id="button-menu" class="mobile-only"><span class="ir"></span>Menu</a>
+        <nav class="left">
+            <h3 class="mobile-only title">Menu</h3>
+            <div class="wrapper">
+                <ul id="nav">
+                    <li class="current "><a href="https://maoridictionary.co.nz/">Search</a></li>
+                    <li class=""><a href="https://maoridictionary.co.nz/dictionary-help">Help</a></li>
+                    <li class=""><a href="https://maoridictionary.co.nz/dictionary-info" title="Understanding the Māori Dictionary entries">Info</a></li>
+                    <li class=""><a href="https://maoridictionary.co.nz/dictionary-project" title="Māori Dictionary project sources">Sources</a></li>
+                    <li class=""><a href="https://maoridictionary.co.nz/maori-dictionary" title="The printed version of the Māori Dictionary">The Book</a></li>
+                    <li class=""><a href="https://maoridictionary.co.nz/maori-resources" title="Māori Language resources">Resources</a></li>
+                    <li><a href="http://www.tewhanake.maori.nz/" class="sub" target="_blank"><span class="koru ir"></span>Te Whanake</a></li>
+                </ul>
+                <a href="https://maoridictionary.co.nz/#" class="button-close ir mobile-only">Close</a>
+            </div><!-- end .wrapper -->
+        </nav>
+        <div id="language">
+            <ul>
+                <li class="current"><a href="https://maoridictionary.co.nz/switch/en" title="View site in English">English</a></li>
+                <li class=""><a href="https://maoridictionary.co.nz/switch/mi" title="View site in Māori">Māori</a></li>
+            </ul>
+        </div><!-- end #controls -->
+    </header><!-- end #header -->
+
+
+    <div id="content">
+
+        <div id="hero">
+    <div class="overlay">
+        <a href="https://maoridictionary.co.nz/" id="logo"><h1>Māori<br>Dictionary</h1></a>
+        <h5 class="invert">Te Aka Māori-English, 
+        <br>English-Māori Dictionary</h5>
+        <form action="https://maoridictionary.co.nz/search" method="get" class="searchForm" id="searchForm">
+    <input type="hidden" id="idiom" name="idiom" value="">
+    <input type="hidden" id="phrase" name="phrase" value="">
+    <input type="hidden" id="proverb" name="proverb" value="">
+    <input type="hidden" id="loan" name="loan" value="">
+    <input type="hidden" id="histLoanWords" name="histLoanWords" value="">
+
+    <fieldset>
+        <label><strong>Search</strong> Māori / English word or phrase</label>        <div class="field">
+            <input type="text" id="search" name="keywords" value="">
+            <a href="https://maoridictionary.co.nz/#" class="ir icon-remove" style="">Clear</a>
+            <span class="ir icon-search">Search</span>
+            <button id="submitSearchBtn" style="opacity: 0.387099;">Search</button>
+        </div>
+    </fieldset>
+</form>    </div><!-- end .overlay -->
+    <div class="gradient"></div>
+
+    <!-- slide images 1280px by 600px -->
+        <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 600px;"><ul class="slider" style="width: auto; position: relative;">
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 50; display: block;">
+            <img src="./Māori Dictionary_files/hero-waekura-min.jpg" alt="">
+            <h4 class="copyright">Photo: John Moorfield</h4>        </li>
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 0; display: none;">
+            <img src="./Māori Dictionary_files/hero-haka2-min.jpg" alt="">
+            <h4 class="copyright">Photo: ATL, ref 1/2-029794-F</h4>        </li>
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 0; display: none;">
+            <img src="./Māori Dictionary_files/hero-kea-min.jpg" alt="">
+            <h4 class="copyright">Photo: John Moorfield</h4>        </li>
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 0; display: none;">
+            <img src="./Māori Dictionary_files/hero-fern-min.jpg" alt="">
+            <h4 class="copyright">Photo: Chris Williams</h4>        </li>
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 0; display: none;">
+            <img src="./Māori Dictionary_files/hero-mud-min.jpg" alt="">
+            <h4 class="copyright">Photo: Destination Rotorua</h4>        </li>
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 0; display: none;">
+            <img src="./Māori Dictionary_files/hero-peruperu-min.jpg" alt="">
+            <h4 class="copyright">Photo: ATL, ref. 1/2-023706-G</h4>        </li>
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 0; display: none;">
+            <img src="./Māori Dictionary_files/hero-haka-min.jpg" alt="">
+            <h4 class="copyright">Photo: Chris WIlliams</h4>        </li>
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 0; display: none;">
+            <img src="./Māori Dictionary_files/hero-bush-min.jpg" alt="">
+            <h4 class="copyright">Photo: Chris WIlliams</h4>        </li>
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 0; display: none;">
+            <img src="./Māori Dictionary_files/hero-marae-min.jpg" alt="">
+            <h4 class="copyright">Photo: Chris Williams</h4>        </li>
+                <li style="float: none; list-style: none; position: absolute; width: 1680px; z-index: 0; display: none;">
+            <img src="./Māori Dictionary_files/hero-carving-min.jpg" alt="">
+            <h4 class="copyright">Photo: Sara Orme</h4>        </li>
+            </ul></div></div>
+</div>
+        
+        <div class="wrapper">
+    <section>
+        <div class="center first clearfix">
+            <div class="bookmark">
+                <div class="ir icon filled"></div>
+            </div><!-- end .bookmark -->
+            <div class="intro">
+                <div class="columns">
+                    <div class="large-one blurb left">
+                        <h2>Māori<br>Dictionary</h2><h3 class="strike"><span class="hr"></span> Online</h3>                        <p>Tēnā koe. Nau mai ki <strong><em>Te Aka</em></strong>. Welcome to
+    the online version of <strong><em>Te Aka Māori-English, English-Māori
+    Dictionary and Index</em></strong>. This online Māori dictionary is aimed
+    at providing quick access but it is recommended that you also
+    purchase the hard copy for use in class and when you are not online.</p>                    </div><!-- end .col-one -->
+                    <div class="large-one left">
+                        <p>As well as the words one would expect in a traditional
+    dictionary, <em>Te Aka</em> has encyclopaedic entries including
+    the names of plants and animals (especially native and endemic
+    species), stars, planets and heavenly bodies, important Māori
+    people, key ancestors of traditional narratives, tribal groups
+    and ancestral canoes. Māori names for institutions, country names,
+    place names and other proper names are also provided.</p>
+    <p>There are also explanations of key concepts central to Māori culture. Comprehensive
+    explanations for grammatical items are included, with examples
+    of usage, as are idioms and colloquialisms with their meanings
+    and examples. These have all been included because they are important
+    in communicating in a Māori context, and contribute to understanding
+    and speaking the language in a natural way. Many of the separate meanings of each headword now have example sentences with translations.</p>
+    <p class="large">This dictionary is indexed to the <a href="http://www.tewhanake.maori.nz/"><em>Te
+    Whanake</em> Māori language series</a> of narrative
+    texts and resources, giving you quick access to topics, grammatical
+    and usage explanations, idioms and colloquialisms, maps and illustrations.</p>                    </div>
+                </div><!-- end .columns -->
+            </div><!-- end .intro -->
+        </div><!-- end .center -->
+    </section>
+    <hr>
+    <section class="banner-holder">
+    <!--
+    <h2>Banner</h2>
+    <div class="center clearfix">
+        <div class="row">
+            <div class="banner">
+                <div id='div-gpt-ad-1369700104586-0'>
+                    <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1369700104586-0'); });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <p>&nbsp;</p>
+</section></div><!-- end .wrapper -->
+
+<!-- Thanks message -->
+<div id="thanks" style="display:none;max-width:600px;background:#fff;padding:20px;">
+    <h3>Tēnā koutou users of Te Aka</h3>
+    <p>Thank you for completing our pop-up survey in 2015.  We received approximately 18 thousand responses from over a million unique users 
+        during the survey period. The results tell us that for many learners and speakers of Māori, Te Aka serves a much greater function 
+        than to just look up the meaning of Māori words, or to find equivalents of a word. A study from the survey will be made available 
+        through the Te Ipukarea website in 2017 (see <a href="http://www.teipukarea.maori.nz/" target="_blank">www.teipukarea.maori.nz</a> ).</p>
+    <p><em>Thank you again for completing our survey and for using Te Aka.</em></p>
+</div>
+
+    </div><!-- end #content -->
+
+        <section class="light feature">
+        <div class="center clearfix">
+            <div class="bookmark desktop-onl">
+                <div class="ir icon"></div>
+                <h5>Books + Apps</h5>
+            </div>
+            <div id="feature-box">
+                <div class="columns">
+                    <div class="large-one box app left">
+                        <div class="detail">
+                            <h3>Download</h3>
+                            <h2>The App</h2>
+                            <p>This Māori dictionary is now available as an app. With the iPhone, iPod Touch, iPad, and Android app you can use the dictionary anywhere without the need to be online.</p>
+<a href="https://itunes.apple.com/nz/app/id377136638?mt=8" target="_blank">iPhone</a> <span class="separator">/</span> <a href="https://itunes.apple.com/nz/app/id377136638?mt=8" target="_blank">iPad</a> <span class="separator">/</span> <a href="http://bit.ly/VBlCTo" target="_blank">Android</a> 
+                        </div><!-- end .detail -->
+                        <div class="figure">
+                            <div class="device-iphone ir"></div>
+                            <div class="mask">
+                                <img src="./Māori Dictionary_files/iphone-screenshot.jpg" alt="">
+                            </div><!-- end .mask -->
+                        </div><!-- end .figure -->
+                    </div><!-- end .col-one -->
+                    <div class="large-one box book left">
+                        <div class="detail">
+                            <h3>Buy</h3>
+                            <h2>The Book</h2>
+                            <p><em>Te Aka Māori-English, English-Māori Dictionary and Index</em> by John C Moorfield. This dictionary comprises a selection of modern and everyday language that will be extremely useful for learners of the Māori language.</p>
+<a href="https://maoridictionary.co.nz/maori-dictionary">More info</a>                        </div><!-- end .detail -->
+                        <div class="figure">
+                            <img src="./Māori Dictionary_files/book-teaka.png" alt="">
+                        </div><!-- end .figure -->
+                    </div>
+                </div><!-- end .columns -->
+            </div><!-- end #feature-box -->
+        </div><!-- end .center -->
+    </section>
+    
+    <div class="wrapper" style="background:#fff;padding-top:40px;">
+    <section>
+        <div class="center clearfix">
+            <div class="bookmark">
+                <div class="ir icon filled" style="background-image:url(/v3/i/hpk-logo.png);background-position:0 0; background-size:44px 44px"></div>
+            </div><!-- end .bookmark -->
+            <div class="intro">
+                <div class="columns">
+                    <div class="large-one blurb left">
+                        <h2>He Pātaka<br>Kupu</h2><h3 class="strike"><span class="hr"></span> Te kai a te rangatira</h3>                        <p>He Pātaka Kupu is a monolingual Māori language dictionary, and was designed using its own culturally authentic terms.</p><p><a href="https://hepatakakupu.nz/" target="_blank">Visit website</a></p>                    </div><!-- end .col-one -->
+                    <div class="large-one left">
+                        <p><a href="https://hepatakakupu.nz/" target="_blank"><img src="./Māori Dictionary_files/hpk-imac.jpg" style="max-width:100%"></a></p>                    </div>
+                </div><!-- end .columns -->
+            </div><!-- end .intro -->
+        </div><!-- end .center -->
+    </section>
+</div><!-- end .wrapper -->
+
+    <section class="dark short sub-footer">
+        <div class="center wide clearfix">
+            <div class="bookmark">
+                <div class="ir icon white"></div>
+                <h5>More Resources</h5>
+            </div>
+            <div id="more-box">
+                <ul>
+                    <li>
+                        <a href="http://resources.tewhanake.maori.nz/">
+                            <img src="./Māori Dictionary_files/resource-resources.png" alt="Resources">
+                            <h3>Resources</h3>
+                            <p>Textbooks, study guides, CDs, teachers' manuals and the bilingual Māori dictionary of the Te Whanake series.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://animations.tewhanake.maori.nz/">
+                            <img src="./Māori Dictionary_files/resource-animations.png" alt="Animations">
+                            <h3>Animations</h3>
+                            <p>Online modules of animated movies and activities that complement the Te Whanake textbooks for learning Māori.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://podcasts.tewhanake.maori.nz/">
+                            <img src="./Māori Dictionary_files/resource-podcasts.png" alt="Podcasts">
+                            <h3>Podcasts</h3>
+                            <p>Online activities of the Te Whanake textbooks for playback on computers, television or portable devices.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://tv.tewhanake.maori.nz/">
+                            <img src="./Māori Dictionary_files/resource-tewhanake-tv.png" alt="Te Whanake TV">
+                            <h3>Te Whanake TV</h3>
+                            <p>Streamed television programmes for developing listening comprehension skills.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.tokureo.maori.nz/">
+                            <img src="./Māori Dictionary_files/resource-toku-reo.png" alt="Tōku Reo">
+                            <h3>Tōku Reo</h3>
+                            <p>Online activities for further practice for each episode of Tōku Reo, the television series for beginners of Māori language.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- end #feature-box -->
+        </div><!-- end .center -->
+    </section>
+    <footer id="footer">
+        <div class="center">
+            <div id="footer-logos">
+                <ul>
+                    <li><a id="TeIpukarea" class="ir" href="http://www.teipukarea.maori.nz/">Te Ipukarea</a></li>
+                    <li><a id="Pearson" class="ir" href="http://www.pearsoned.co.nz/">Pearson</a></li>
+                    <li><a id="netvalue" class="ir" href="https://www.netvalue.nz/">NetValue</a></li>
+                </ul>
+            </div><!-- end #footer-logos -->
+            <p>© Copyright 2003-2018 - John C Moorfield, Te Aka Online Māori Dictionary</p>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="https://maoridictionary.co.nz/dictionary-help">Help</a></li>
+                </ul>
+            </div><!-- end .footer-links -->
+        </div><!-- end .center -->
+    </footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7443286c10","applicationID":"6852488","transactionName":"YwNXMENSVxVWAkVeXlpJdAdFWlYIGA==","queueTime":0,"applicationTime":47,"atts":"T0RURgtIRBs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+</body></html>

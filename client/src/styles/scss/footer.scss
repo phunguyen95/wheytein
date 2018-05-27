@@ -1,0 +1,111 @@
+.footer-wrapped {
+  min-height: 10vh;
+  background: black;
+}
+.customer_service_wrapped {
+  padding: 0;
+  margin: 0;
+}
+.customer_service_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.customer_service_contents {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+  h4 {
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    margin: 0.5rem;
+  }
+}
+.content_item {
+  flex: 0 0 46%;
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.contact_us_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+  h4 {
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    margin: 0.5rem;
+  }
+}
+.phone_number {
+  flex: 0 0 100%;
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.mobile_phone_number {
+  flex: 0 0 100%;
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.contact_email_info {
+  flex: 0 0 100%;
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  p {
+    margin: 0.2rem 0rem 0.2rem;
+  }
+  span {
+    color: #999999;
+  }
+}
+.social_content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+  h4 {
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    margin: 0.5rem;
+  }
+}
+.social_links_wrapped {
+  display: flex;
+}
+.social_link {
+  flex: 1;
+  a {
+    text-decoration: none;
+  }
+  margin-right: 0.5rem;
+}
+@media (min-width: 40rem) {
+  .customer_service_container {
+    flex-wrap: nowrap;
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+  .customer_service_contents {
+    flex: 0 0 40%;
+  }
+  .contact_us_container {
+    flex: 0 0 40%;
+  }
+  .social_content {
+    flex: 0 0 20%;
+  }
+  .content_item {
+    flex: 0 0 32%;
+  }
+}
+@media (min-width: 1200px) {
+  .customer_service_container {
+    width: 1226px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,14 @@
+@import 'header.scss';
+@import 'layout.scss';
+@import 'footer.scss';
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+@import 'product.scss';
+@import 'services.scss';
+@import 'category.scss';
+@import 'allproducts.scss';
+body {
+  font-family:'Roboto', sans-serif!important;
+  margin: 0;
+  box-sizing: border-box;
+}

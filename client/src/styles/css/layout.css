@@ -1,0 +1,115 @@
+.layout {
+  min-height: calc(100vh - 3.5rem - 8rem);
+  background: #f5f5f5;
+  overflow: hidden;
+  overflow-x: hidden; }
+
+.featured_item {
+  position: relative; }
+
+.featured_item a {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  text-decoration: none;
+  right: 0px; }
+
+.featured_image {
+  height: 150px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: right 10px !important; }
+
+.featured_caption {
+  color: #ffffff;
+  top: 0px;
+  width: 100%;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 28px;
+  box-sizing: border-box; }
+
+.top__seller__List {
+  margin: 0;
+  padding: 0; }
+  .top__seller__List:hover .caption__info {
+    height: 100%; }
+
+.top_seller__wrapped {
+  position: relative;
+  z-index: 1; }
+
+.top__seller_item {
+  margin-right: 1rem; }
+
+.top__seller_item img {
+  width: 40vw;
+  height: 20vh;
+  margin-left: 0.6rem; }
+
+.caption__info {
+  position: absolute;
+  padding: 0;
+  /* margin: 0; */
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  color: #fff;
+  width: 40vw;
+  font-size: 0.9rem;
+  margin-left: 0.7rem;
+  text-align: center;
+  transition: height 0.5s, transform 0.5s;
+  transition: height 0.5s; }
+
+.caption__info__wrapped {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center; }
+
+.product__title h4 {
+  padding: 0;
+  margin: 0; }
+
+.wrapped_slider_top_seller {
+  height: 20vh; }
+
+@media (min-width: 50rem) {
+  .top__seller_item img {
+    width: 15vw;
+    height: 20vh;
+    margin-left: 0.6rem; }
+
+  .caption__info {
+    width: 15vw;
+    height: 7vh; }
+
+  .wrapped_slider_top_seller {
+    width: 90%; }
+
+  .wrapped__top__seller {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px !important; }
+
+  .featured_image {
+    height: 300px; }
+
+  .line__break_nav_bar {
+    height: 1px;
+    background: #ecf0f1;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #eee; } }
+@media (min-width: 1200px) {
+  .wrapped__top__seller {
+    width: 1380px;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=layout.css.map */
