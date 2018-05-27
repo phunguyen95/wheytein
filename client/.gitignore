@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/.sass-cache
+
 # testing
 /coverage
 
@@ -19,3 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
