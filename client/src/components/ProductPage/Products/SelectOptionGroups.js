@@ -1,8 +1,8 @@
 import React from 'react'
 
 function SelectOptionGroups({name, value, error, onChange,options}) {
-    const selectOptions = options.map(option => (
-        <option className="option_style" key={option.label} value={option.value}>
+    const selectOptions = options.map((option,index) => (
+        <option className="option_style" key={index} value={option.value}>
           {option.label}
         </option>
       ));

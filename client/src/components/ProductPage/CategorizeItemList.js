@@ -60,13 +60,11 @@ class CategorizeItemList extends React.Component {
     return result;
   };
   toogleWheyProtein = e => {
-    e.preventDefault();
     this.setState({
       wheyProtein: !this.state.wheyProtein
     });
   };
   toogleMuscleBuilding = e => {
-    e.preventDefault();
     this.setState({
       muscleBuilding: !this.state.muscleBuilding
     });

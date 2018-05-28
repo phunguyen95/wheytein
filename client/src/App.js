@@ -6,7 +6,7 @@ import Navbar from './components/Layout/Navbar/Navbar';
 import Footer from './components/Layout/Footer/Footer'
 import Layout from './components/Layout/Layout';
 import ProductPage from './components/ProductPage/ProductPage'
-
+import ProductDetailsPage from './components/ProductPage/ProductDetails/ProductDetailsPage'
 class App extends Component {
   render() {
     return (
@@ -19,6 +19,7 @@ class App extends Component {
             <Route exact path="/" component={Layout}/>            
             <Switch>
               <Route exact path="/products" component={ProductPage}/>
+              <Route exact path="/products/:name" component={ProductDetailsPage}/>
             </Switch>
             </div>
             
