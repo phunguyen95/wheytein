@@ -110,4 +110,16 @@
 .first {
   font-weight: 700; }
 
+.freq-btn-to-cart {
+  flex: 0 0 100%;
+  margin-left: -1rem;
+  padding-top: 1rem; }
+
+.freq {
+  width: 100%;
+  margin: 0; }
+
+.blur {
+  opacity: 0.5; }
+
 /*# sourceMappingURL=productoverview.css.map */

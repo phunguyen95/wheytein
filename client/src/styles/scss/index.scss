@@ -9,8 +9,11 @@
 @import 'allproducts.scss';
 @import 'productdetails.scss';
 @import 'productoverview.scss';
+@import 'nutritiontable.scss';
+@import 'variable.scss';
+@import 'relatedproducts.scss';
 body {
-  font-family:'Roboto', sans-serif!important;
+  font-family: 'Roboto', sans-serif !important;
   margin: 0;
   box-sizing: border-box;
 }

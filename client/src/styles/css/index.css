@@ -1017,6 +1017,9 @@ div > i {
   width: 100%;
   padding: 0.5rem; }
 
+.product_title_text {
+  margin-bottom: 0.5rem; }
+
 .product__slider__image {
   margin: 0 auto; }
 
@@ -1026,8 +1029,7 @@ div > i {
   margin: 0 auto; }
 
 .product__info {
-  margin-top: 1.5rem;
-  padding: 0.5rem; }
+  margin-top: 1.5rem; }
 
 .per_pounds {
   font-size: 12px;
@@ -1148,6 +1150,127 @@ div > i {
   100% {
     transform: scale(1);
     opacity: 0; } }
+.product-detail-image-wrapped {
+  display: none; }
+
+@media (min-width: 40rem) {
+  .product__section {
+    flex-wrap: nowrap; }
+
+  .wrapped__details__section {
+    flex: 0 0 50%; }
+
+  .product__slider__images {
+    display: none; }
+
+  .product-detail-image-wrapped {
+    display: block;
+    flex: 0 0 20%; }
+
+  .product-detail-image {
+    padding: 1rem; }
+    .product-detail-image img {
+      height: 300px;
+      object-fit: cover; }
+
+  .image-thumbnai {
+    margin-top: 1rem;
+    text-align: center; }
+
+  .thumbnail_image {
+    height: 72px; }
+
+  .image_active {
+    border: 1px solid green; }
+
+  .wrapped_qty_info {
+    flex: 1; }
+
+  .btn-add-to-wish {
+    background: #008a00;
+    outline: none;
+    text-align: center;
+    /* margin-left: -1rem; */
+    width: 100%;
+    padding: 0.3rem;
+    position: relative; }
+
+  .btn-add-to-cart {
+    background: #ff8605;
+    outline: none;
+    text-align: center;
+    /* margin-left: -1rem; */
+    width: 100%;
+    padding: 0.3rem;
+    position: relative; }
+
+  .wrapped_add_to_cart {
+    /* margin-top: 1rem; */
+    /* text-align: center; */
+    padding: 1rem; }
+
+  .quantity_container {
+    background: #d9d9d9;
+    min-height: 30vh; }
+
+  .msrp_row {
+    display: flex;
+    align-items: center; }
+
+  .msrp_text {
+    flex: 0 0 30%; }
+
+  .msrp_price {
+    flex: 1;
+    text-decoration: line-through; }
+
+  .row {
+    display: flex;
+    align-items: center;
+    font-size: 1rem; }
+
+  .our_price {
+    font-weight: 700;
+    font-size: 2rem; }
+
+  .per_pounds_row {
+    flex: 1; }
+
+  .saving {
+    font-size: 1.2rem;
+    font-weight: 400; }
+
+  .product_title_text {
+    font-size: 1.2rem;
+    font-weight: 700; }
+
+  .product-flag-container {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    background-color: #ff8a00;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding: 0 8px 0 8px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-bottom: 1rem; }
+
+  .vendor a {
+    color: green; }
+
+  .status {
+    margin-top: 1rem;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d0d0d0; }
+    .status span {
+      color: green;
+      font-size: 1rem; }
+
+  .stock-status {
+    padding: 0.5rem 0; } }
 .container__description__wrapped {
   padding: 0;
   margin-top: 1rem; }
@@ -1260,8 +1383,111 @@ div > i {
 .first {
   font-weight: 700; }
 
+.freq-btn-to-cart {
+  flex: 0 0 100%;
+  margin-left: -1rem;
+  padding-top: 1rem; }
+
+.freq {
+  width: 100%;
+  margin: 0; }
+
+.blur {
+  opacity: 0.5; }
+
+.product-supplement-facts-container {
+  border: 1px solid black; }
+
+.nutrition_heading {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem; }
+  .nutrition_heading h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; }
+
+.serving-per-container {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem; }
+
+.nutrition_serving_size {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem; }
+
+.serving_size {
+  font-weight: 500; }
+
+.serving-per-container {
+  font-weight: 500; }
+
+.table_body {
+  display: flex;
+  flex-wrap: wrap; }
+
+.first_col {
+  flex: 0 0 67%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.amount_per_serving {
+  flex: 0 0 57px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.strong {
+  font-weight: 500; }
+
+.daily_value {
+  flex: 0 0 53px;
+  border-bottom: 1px solid black; }
+
+.notes_daily_value {
+  flex: 0 0 100%;
+  border-bottom: 1px solid black; }
+
+.dietary_fiber {
+  flex: 0 0 55%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.calories__notes {
+  flex: 0 0 70px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.calories__notes_2000 {
+  flex: 0 0 40px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.calories__notes_2500 {
+  flex: 0 0 40px;
+  border-bottom: 1px solid black; }
+
+.related-products-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.related_item {
+  flex: 0 0 48%;
+  margin-right: 0.4rem; }
+  .related_item img {
+    height: 120px;
+    object-fit: cover; }
+  .related_item a {
+    text-decoration: none; }
+
+.product-description span {
+  font-size: 0.8rem; }
+
+.product-price {
+  font-weight: 700; }
+
+.product-info-wrapped {
+  color: black; }
+
 body {
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
   margin: 0;
   box-sizing: border-box; }
 

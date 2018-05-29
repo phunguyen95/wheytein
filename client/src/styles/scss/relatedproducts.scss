@@ -1,0 +1,26 @@
+.related-products-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.related_item {
+  flex: 0 0 48%;
+  margin-right: 0.4rem;
+  img {
+    height: 120px;
+    object-fit: cover;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.product-description {
+  span {
+    font-size: 0.8rem;
+  }
+}
+.product-price {
+  font-weight: 700;
+}
+.product-info-wrapped {
+  color: black;
+}

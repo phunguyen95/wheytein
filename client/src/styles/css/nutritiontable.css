@@ -1,0 +1,70 @@
+.product-supplement-facts-container {
+  border: 1px solid black; }
+
+.nutrition_heading {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem; }
+  .nutrition_heading h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; }
+
+.serving-per-container {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem; }
+
+.nutrition_serving_size {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem; }
+
+.serving_size {
+  font-weight: 500; }
+
+.serving-per-container {
+  font-weight: 500; }
+
+.table_body {
+  display: flex;
+  flex-wrap: wrap; }
+
+.first_col {
+  flex: 0 0 67%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.amount_per_serving {
+  flex: 0 0 57px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.strong {
+  font-weight: 500; }
+
+.daily_value {
+  flex: 0 0 53px;
+  border-bottom: 1px solid black; }
+
+.notes_daily_value {
+  flex: 0 0 100%;
+  border-bottom: 1px solid black; }
+
+.dietary_fiber {
+  flex: 0 0 55%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.calories__notes {
+  flex: 0 0 70px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.calories__notes_2000 {
+  flex: 0 0 40px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; }
+
+.calories__notes_2500 {
+  flex: 0 0 40px;
+  border-bottom: 1px solid black; }
+
+/*# sourceMappingURL=nutritiontable.css.map */

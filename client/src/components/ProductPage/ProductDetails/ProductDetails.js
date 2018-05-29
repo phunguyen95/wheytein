@@ -2,20 +2,88 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 import SelectOptionGroups from '../Products/SelectOptionGroups';
 import ProductDescription from './ProductDescription';
-
+import { Link } from 'react-router-dom';
 export default class ProductDetails extends Component {
   state = {
     flavours: '',
+    windowWidth: undefined,
+    windowHeight: undefined
+  };
 
-   };
   onChange = e => {
     this.setState({
       [e.target.name]: [e.target.value]
     });
   };
+  renderDesktop = () => {
+    const options = [
+      { label: 'Double Chocolate', value: 'Double Chocolate' },
+      { label: 'Triple Chocolate', value: 'Triple Chocolate' },
+      { label: 'Double Chocolate', value: 'Double Chocolate' },
+      { label: 'Double Chocolate', value: 'Double Chocolate' },
+      { label: 'Double Chocolate', value: 'Double Chocolate' },
+      { label: 'Double Chocolate', value: 'Double Chocolate' }
+    ];
 
-  render() {
-    const {component} = this.props;
+    return (
+      <div>
+        <div className="">
+          <div className="product-flag-container">
+            <div className="flag-best-seller">Best Seller</div>
+          </div>
+          <div className="product_title_text">
+            <strong>
+              Optimum Nutrition, Gold Standard, 100% Whey, French Vanilla Crème,
+              5 lbs (2.27 kg)
+            </strong>
+          </div>
+          <div className="vendor">
+            By <Link to="/brands/Optinum-Nutrition">Optinum Nutrition </Link>
+          </div>
+        </div>
+        <div className="status">
+          <div className="stock-status">
+            Status: <span>In Stock</span>
+          </div>
+        </div>
+        <div className="product__info">
+          <div className="wrapped_flavoured_info">
+            <div className="flavours__text">
+              <span>Flavours:</span>
+            </div>
+            <div className="filter__select">
+              <SelectOptionGroups
+                value={this.state.flavours}
+                name="flavours"
+                onChange={this.onChange}
+                options={options}
+              />
+            </div>
+          </div>
+          <div className="wrapped__size__info">
+            <span>
+              Size: <storng>5 lbs</storng>
+            </span>
+            <div className="size__container">
+              <div
+                data-url="https://nz.iherb.com/pr/Optimum-Nutrition-Gold-Standard-100-Whey-French-Vanilla-Cr-me-2-lbs-909-g/27499"
+                className="size_item"
+              >
+                5 lbs
+              </div>
+              <div className="size_item">2 lbs</div>
+              <div className="size_item">1 lbs</div>
+              <div className="size_item">1 lbs</div>
+            </div>
+          </div>
+          <ProductDescription />
+        </div>
+      </div>
+    );
+  };
+  renderMobile = () => {
+    console.log('vo monbile');
+    const { component } = this.props;
     var settings = {
       dots: true,
       infinite: true,
@@ -33,9 +101,9 @@ export default class ProductDetails extends Component {
       { label: 'Double Chocolate', value: 'Double Chocolate' },
       { label: 'Double Chocolate', value: 'Double Chocolate' }
     ];
-    
+
     return (
-      <section className="wrapped__details__section">
+      <div>
         <div className="product_title_text">
           <strong>
             Optimum Nutrition, Gold Standard, 100% Whey, French Vanilla Crème, 5
@@ -88,9 +156,30 @@ export default class ProductDetails extends Component {
               <div className="size_item">1 lbs</div>
             </div>
           </div>
-          {component ? component :null}
-      <ProductDescription/>
+          {component ? component : null}
+          <ProductDescription />
         </div>
+      </div>
+    );
+  };
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
+  handleResize = () =>
+    this.setState({
+      windowHeight: window.innerHeight,
+      windowWidth: window.innerWidth
+    });
+  render() {
+    const { windowWidth } = this.state;
+    return (
+      <section className="wrapped__details__section">
+        {windowWidth < 640 ? this.renderMobile() : this.renderDesktop()}
       </section>
     );
   }
