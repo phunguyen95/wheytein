@@ -121,3 +121,8 @@
     margin: 0 auto;
   }
 }
+@media (min-width: 64rem) {
+  .top__seller_item img {
+    height: 15vh;
+  }
+}

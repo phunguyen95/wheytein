@@ -320,6 +320,9 @@ div > i {
   .wrapped__top__seller {
     width: 1380px;
     margin: 0 auto; } }
+@media (min-width: 64rem) {
+  .top__seller_item img {
+    height: 15vh; } }
 .footer-wrapped {
   min-height: 10vh;
   background: black; }
@@ -591,14 +594,15 @@ div > i {
 
 .category__menu__wrapped {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 .category__container {
-  display: flex;
-  flex-wrap: wrap; }
+  display: inline-block;
+  overflow: hidden; }
 
 .category__menu__item {
-  flex: 0 0 46%;
+  display: inline-block;
   margin-right: 0.7rem; }
 
 .btn-category-menu {
@@ -627,12 +631,13 @@ div > i {
 .category_products_items {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.5rem; }
+  margin: 0.5rem;
+  justify-content: center; }
 
 .category_product_item {
-  flex: 0 0 46%;
-  margin-right: 0.7rem;
+  flex: 0 0 calc(46% - 10px);
   background: #fff;
+  margin-right: 0.5rem;
   margin-bottom: 0.5rem; }
 
 .category_product_image img {
@@ -671,18 +676,12 @@ div > i {
   font-weight: 400; }
 
 @media (min-width: 40rem) {
-  .category__container {
-    flex-wrap: nowrap; }
-
-  .category__menu__item {
-    flex: 1; }
-
   .category_products_items {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
 
   .category_product_item {
-    flex: 0 0 22%;
-    max-width: 22%;
+    flex: 0 0 calc(22% - 10px);
     padding: 0.7rem; }
 
   .btn-see-more {
@@ -838,7 +837,7 @@ div > i {
   margin: 0; }
 
 .product__item__content {
-  flex: 0 0 47%;
+  flex: 0 0 calc(47% - 10px);
   background: white;
   margin-right: 0.6rem;
   text-align: center;
@@ -847,7 +846,8 @@ div > i {
 .product__items__wrapped {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0.5rem; }
+  padding-left: 0.5rem;
+  justify-content: center; }
 
 .product_item_images {
   position: relative; }
@@ -986,7 +986,10 @@ div > i {
     top: 0; }
 
   .product__item__content {
-    flex: 0 0 23%; } }
+    flex: 0 0 calc(23% - 10px); }
+
+  .product__items__wrapped {
+    padding: 0; } }
 @media (min-width: 1200px) {
   .page__divider {
     width: 1226px;
@@ -1052,7 +1055,8 @@ div > i {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 0.5rem;
-  margin-right: 0.5rem; }
+  margin-right: 0.5rem;
+  cursor: pointer; }
 
 .text_qty {
   margin-right: 0.5rem; }
@@ -1090,7 +1094,8 @@ div > i {
   margin-left: -1rem;
   width: 65%;
   padding: 0.3rem;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .btn-add-to-cart span {
     color: white;
     font-size: 1rem; }
@@ -1129,7 +1134,8 @@ div > i {
   margin-left: -1rem;
   width: 65%;
   padding: 0.3rem;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .btn-add-to-wish span {
     color: white;
     font-size: 1rem; }
@@ -1152,6 +1158,9 @@ div > i {
     opacity: 0; } }
 .product-detail-image-wrapped {
   display: none; }
+
+.container__description__wrapkped {
+  margin-top: 1rem; }
 
 @media (min-width: 40rem) {
   .product__section {
@@ -1207,7 +1216,8 @@ div > i {
   .wrapped_add_to_cart {
     /* margin-top: 1rem; */
     /* text-align: center; */
-    padding: 1rem; }
+    padding: 1rem;
+    margin-right: -0.8rem; }
 
   .quantity_container {
     background: #d9d9d9;
@@ -1270,7 +1280,87 @@ div > i {
       font-size: 1rem; }
 
   .stock-status {
-    padding: 0.5rem 0; } }
+    padding: 0.5rem 0; }
+
+  .size_item {
+    flex: 0 0 21%;
+    margin-right: 0.5rem;
+    border-radius: 1rem; }
+
+  .active_size {
+    border: 1px solid green;
+    background: #eff4e9; }
+
+  .wrapped-freq-prods {
+    margin-top: 2rem; }
+
+  .bundle-offer {
+    display: inline-block;
+    padding: 12px 39px 12px 39px;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 25px; }
+
+  .bundle-offer-nib {
+    display: inline-block;
+    width: 0;
+    padding-right: 10px;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 23px solid #f7f7f7;
+    position: relative;
+    top: 15px;
+    right: 10px; }
+
+  .header-text {
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2rem; } }
+@media (min-width: 1200px) {
+  .container__description__wrapkped {
+    width: 1226px;
+    margin: 0 auto;
+    background: white; } }
+@media (min-width: 64rem) {
+  .freq_prods_wrapped {
+    display: flex; }
+
+  .freq_prod_container {
+    flex: 0 0 30%;
+    margin-right: 2rem; }
+
+  .product-description-container {
+    display: flex; }
+
+  .inner-content-description {
+    flex: 0 0 68%; }
+
+  .inner-content-nutrition-fact {
+    flex: 0 0 30%; } }
+@media (max-width: 64rem) {
+  .wrapped__details__section {
+    flex: 0 0 36%; }
+
+  .size_item {
+    flex: 1; }
+
+  .product-detail-image img {
+    height: 14rem; } }
+@media (max-width: 64rem) {
+  .freq_prods_wrapped {
+    background: white; }
+
+  .freq_prod_container {
+    max-width: 40%; }
+
+  .freq_product img {
+    height: 6rem; }
+
+  .our_price {
+    font-size: 1.5rem; } }
 .container__description__wrapped {
   padding: 0;
   margin-top: 1rem; }
@@ -1293,19 +1383,17 @@ div > i {
 .inline-view-more {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
   color: #d9d9d9;
   font-size: 1.3rem; }
 
 .description_text {
   padding-bottom: 0.5rem;
-  font-weight: 700; }
+  font-weight: 700;
+  border-bottom: 1px solid #dfdfdf; }
 
 .list_style_bullet li {
   list-style: disc; }
-
-.description_text {
-  border-bottom: 1px solid #dfdfdf; }
 
 .sub_heading {
   font-weight: 700; }
@@ -1331,7 +1419,7 @@ div > i {
 .purchase_together {
   position: absolute;
   top: 24px;
-  right: 0;
+  right: -13px;
   font-size: 1.4rem;
   color: green; }
 
@@ -1395,6 +1483,30 @@ div > i {
 .blur {
   opacity: 0.5; }
 
+@media (min-width: 40rem) {
+  .freq-btn-to-cart {
+    flex: 0 0 30%; }
+
+  .container__description {
+    display: block;
+    padding: 1rem; }
+
+  .product__over_view__wrapped {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #d9d9d9; }
+
+  .description_text {
+    border: none; }
+
+  .heading__description {
+    border: none; }
+
+  .desktop_description_text {
+    display: none; } }
+@media (min-width: 64rem) {
+  .freq_product img {
+    height: 6rem; } }
 .product-supplement-facts-container {
   border: 1px solid black; }
 
@@ -1425,12 +1537,12 @@ div > i {
   flex-wrap: wrap; }
 
 .first_col {
-  flex: 0 0 67%;
+  flex: 0 0 57%;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
 .amount_per_serving {
-  flex: 0 0 57px;
+  flex: 1;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
@@ -1438,7 +1550,7 @@ div > i {
   font-weight: 500; }
 
 .daily_value {
-  flex: 0 0 53px;
+  flex: 1;
   border-bottom: 1px solid black; }
 
 .notes_daily_value {
@@ -1446,22 +1558,22 @@ div > i {
   border-bottom: 1px solid black; }
 
 .dietary_fiber {
-  flex: 0 0 55%;
+  flex: 0 0 47%;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
 .calories__notes {
-  flex: 0 0 70px;
+  flex: 0 0 20%;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
 .calories__notes_2000 {
-  flex: 0 0 40px;
+  flex: 1;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
 .calories__notes_2500 {
-  flex: 0 0 40px;
+  flex: 1;
   border-bottom: 1px solid black; }
 
 .related-products-container {
@@ -1486,9 +1598,34 @@ div > i {
 .product-info-wrapped {
   color: black; }
 
+@media (min-width: 62rem) {
+  .related-product-wrapped {
+    padding: 1rem; }
+
+  .slider_related_hader {
+    border-bottom: 1px solid #ddd; }
+
+  .wrapped_slider_related_products {
+    width: 90%;
+    height: 20vh;
+    margin: 0 auto;
+    margin-top: 2rem; }
+
+  .slick-prev:before {
+    color: black;
+    opacity: 1; }
+
+  .slick-next:before {
+    color: black;
+    opacity: 1; } }
 body {
   font-family: 'Roboto', sans-serif !important;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%; }
+
+#root {
+  overflow: hidden; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,3 +1,4 @@
+@import 'variable.scss';
 .related-products-container {
   display: flex;
   flex-wrap: wrap;
@@ -23,4 +24,30 @@
 }
 .product-info-wrapped {
   color: black;
+}
+@media (min-width: 62rem) {
+  .related-product-wrapped {
+    padding: 1rem;
+  }
+  .slider_related_hader {
+    border-bottom: 1px solid $grey;
+  }
+  .wrapped_slider_related_products {
+    width: 90%;
+    height: 20vh;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .slick-prev {
+    &:before {
+      color: black;
+      opacity: 1;
+    }
+  }
+  .slick-next {
+    &:before {
+      color: black;
+      opacity: 1;
+    }
+  }
 }

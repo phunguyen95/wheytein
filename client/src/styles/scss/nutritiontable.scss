@@ -30,12 +30,12 @@
   flex-wrap: wrap;
 }
 .first_col {
-  flex: 0 0 67%;
+  flex: 0 0 57%;
   border-bottom: $border-grey;
   border-right: $border-grey;
 }
 .amount_per_serving {
-  flex: 0 0 57px;
+  flex: 1;
   border-bottom: $border-grey;
   border-right: $border-grey;
 }
@@ -43,7 +43,7 @@
   font-weight: 500;
 }
 .daily_value {
-  flex: 0 0 53px;
+  flex: 1;
   border-bottom: $border-grey;
 }
 .notes_daily_value {
@@ -51,12 +51,12 @@
   border-bottom: $border-grey;
 }
 .dietary_fiber {
-  flex: 0 0 55%;
+  flex: 0 0 47%;
   border-bottom: $border-grey;
   border-right: $border-grey;
 }
 .calories__notes {
-  flex: 0 0 70px;
+  flex: 0 0 20%;
   border-bottom: $border-grey;
   border-right: $border-grey;
   //   &:nth-last-child(4) {
@@ -64,11 +64,11 @@
   //   }
 }
 .calories__notes_2000 {
-  flex: 0 0 40px;
+  flex: 1;
   border-bottom: $border-grey;
   border-right: $border-grey;
 }
 .calories__notes_2500 {
-  flex: 0 0 40px;
+  flex: 1;
   border-bottom: $border-grey;
 }

@@ -111,5 +111,8 @@
   .wrapped__top__seller {
     width: 1380px;
     margin: 0 auto; } }
+@media (min-width: 64rem) {
+  .top__seller_item img {
+    height: 15vh; } }
 
 /*# sourceMappingURL=layout.css.map */

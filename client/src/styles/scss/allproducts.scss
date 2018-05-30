@@ -155,7 +155,7 @@
   margin: 0;
 }
 .product__item__content {
-  flex: 0 0 47%;
+  flex: 0 0 calc(47% - 10px);
   background: white;
   margin-right: 0.6rem;
   text-align: center;
@@ -165,6 +165,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 0.5rem;
+  justify-content: center;
 }
 .product_item_images {
   position: relative;
@@ -319,7 +320,10 @@
     top: 0;
   }
   .product__item__content {
-    flex: 0 0 23%;
+    flex: 0 0 calc(23% - 10px);
+  }
+  .product__items__wrapped {
+    padding: 0;
   }
 }
 @media (min-width: 1200px) {

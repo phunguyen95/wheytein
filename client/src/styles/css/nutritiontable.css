@@ -28,12 +28,12 @@
   flex-wrap: wrap; }
 
 .first_col {
-  flex: 0 0 67%;
+  flex: 0 0 57%;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
 .amount_per_serving {
-  flex: 0 0 57px;
+  flex: 1;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
@@ -41,7 +41,7 @@
   font-weight: 500; }
 
 .daily_value {
-  flex: 0 0 53px;
+  flex: 1;
   border-bottom: 1px solid black; }
 
 .notes_daily_value {
@@ -49,22 +49,22 @@
   border-bottom: 1px solid black; }
 
 .dietary_fiber {
-  flex: 0 0 55%;
+  flex: 0 0 47%;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
 .calories__notes {
-  flex: 0 0 70px;
+  flex: 0 0 20%;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
 .calories__notes_2000 {
-  flex: 0 0 40px;
+  flex: 1;
   border-bottom: 1px solid black;
   border-right: 1px solid black; }
 
 .calories__notes_2500 {
-  flex: 0 0 40px;
+  flex: 1;
   border-bottom: 1px solid black; }
 
 /*# sourceMappingURL=nutritiontable.css.map */

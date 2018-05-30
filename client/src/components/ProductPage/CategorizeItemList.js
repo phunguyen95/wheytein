@@ -71,7 +71,6 @@ class CategorizeItemList extends React.Component {
   };
   render() {
     const { muscleBuilding } = this.state;
-    console.log(muscleBuilding);
     return (
       <div className="category__list__wrapped">
         <div className="category__list__container">

@@ -3,13 +3,20 @@ import Slider from 'react-slick';
 import SelectOptionGroups from '../Products/SelectOptionGroups';
 import ProductDescription from './ProductDescription';
 import { Link } from 'react-router-dom';
+import classnames from 'classnames';
 export default class ProductDetails extends Component {
   state = {
     flavours: '',
     windowWidth: undefined,
-    windowHeight: undefined
+    windowHeight: undefined,
+    sizeSelected: 1,
+    quantity: 0
   };
-
+  handleSelect = e => {
+    this.setState({
+      sizeSelected: e.target.id
+    });
+  };
   onChange = e => {
     this.setState({
       [e.target.name]: [e.target.value]
@@ -24,7 +31,9 @@ export default class ProductDetails extends Component {
       { label: 'Double Chocolate', value: 'Double Chocolate' },
       { label: 'Double Chocolate', value: 'Double Chocolate' }
     ];
+    const disabled = 'true';
 
+    const { sizeSelected } = this.state;
     return (
       <div>
         <div className="">
@@ -66,23 +75,32 @@ export default class ProductDetails extends Component {
             </span>
             <div className="size__container">
               <div
-                data-url="https://nz.iherb.com/pr/Optimum-Nutrition-Gold-Standard-100-Whey-French-Vanilla-Cr-me-2-lbs-909-g/27499"
-                className="size_item"
+                id="1"
+                className={classnames('size_item', {
+                  active_size: sizeSelected == 1
+                })}
+                onClick={this.handleSelect}
               >
                 5 lbs
               </div>
-              <div className="size_item">2 lbs</div>
+              <div
+                id="2"
+                className={classnames('size_item', {
+                  active_size: sizeSelected == 2
+                })}
+                onClick={this.handleSelect}
+              >
+                2 lbs
+              </div>
               <div className="size_item">1 lbs</div>
               <div className="size_item">1 lbs</div>
             </div>
           </div>
-          <ProductDescription />
         </div>
       </div>
     );
   };
   renderMobile = () => {
-    console.log('vo monbile');
     const { component } = this.props;
     var settings = {
       dots: true,
